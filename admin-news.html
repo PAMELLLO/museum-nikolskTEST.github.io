@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить новость | Никольский музей</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin-forms.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <h1>🏛️ Панель добавления новостей</h1>
+                    <p>Для администратора музея</p>
+                </div>
+                <a href="index.html" class="btn btn-secondary">← На главную</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="admin-main">
+        <div class="container">
+            <div class="admin-container">
+                <h2>Добавить новость в музей</h2>
+                <p class="admin-subtitle">Заполните форму ниже. Новость появится на сайте через 5-10 минут.</p>
+
+                <!-- ИНСТРУКЦИЯ -->
+                <div class="instruction-box">
+                    <h3>📋 Как добавить новость:</h3>
+                    <ol>
+                        <li>Заполните все поля ниже</li>
+                        <li>Для картинки: загрузите фото на <a href="https://imgbb.com" target="_blank">ImgBB.com</a> и
+                            вставьте ссылку</li>
+                        <li>Нажмите "Создать новость"</li>
+                        <li>Откройте таблицу по ссылке ниже и вставьте данные</li>
+                    </ol>
+                </div>
+
+                <!-- ФОРМА -->
+                <form id="newsForm" class="admin-form">
+                    <div class="form-group">
+                        <label for="title">Заголовок новости *</label>
+                        <input type="text" id="title" required placeholder="Например: Открытие новой выставки">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Дата новости *</label>
+                        <input type="date" id="date" required value="<?php echo date('Y-m-d'); ?>">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Категория</label>
+                        <select id="category">
+                            <option value="Выставки">Выставки</option>
+                            <option value="Мероприятия">Мероприятия</option>
+                            <option value="Новости музея" selected>Новости музея</option>
+                            <option value="Анонсы">Анонсы</option>
+                            <option value="Объявления">Объявления</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="image">Ссылка на картинку</label>
+                        <input type="url" id="image" placeholder="https://i.ibb.co/.../photo.jpg">
+                        <small class="help-text">
+                            Загрузите фото на <a href="https://imgbb.com" target="_blank">ImgBB.com</a>
+                        </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="content">Текст новости *</label>
+                        <textarea id="content" rows="10" required placeholder="Полный текст новости..."></textarea>
+                        <small class="help-text">
+                            Можно писать длинный текст, использовать абзацы (Enter)
+                        </small>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" onclick="clearForm()" class="btn btn-secondary">
+                            Очистить форму
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                            Создать новость
+                        </button>
+                    </div>
+                </form>
+
+                <!-- РЕЗУЛЬТАТ -->
+                <div class="result-box" id="resultBox" style="display: none;">
+                    <h3>✅ Готово! Вот ваши данные:</h3>
+                    <div class="result-data" id="resultData"></div>
+                    <div class="instruction-copy">
+                        <p><strong>Что делать дальше:</strong></p>
+                        <ol>
+                            <li>Откройте таблицу: <a
+                                    href="https://docs.google.com/spreadsheets/d/19MFPSy-RnJQstAQKus5RX4fKrctfZZWC8gM6C-oX1IQ/edit"
+                                    target="_blank">Таблица новостей</a></li>
+                            <li>Добавьте новую строку в конец</li>
+                            <li>Скопируйте данные из блоков ниже в соответствующие колонки</li>
+                            <li>Сохраните таблицу (автосохранение)</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- ССЫЛКА НА ТАБЛИЦУ -->
+                <div class="sheet-link">
+                    <h3>📊 Таблица с новостями</h3>
+                    <p>Откройте эту таблицу, чтобы вставить данные:</p>
+                    <a href="https://docs.google.com/spreadsheets/d/19MFPSy-RnJQstAQKus5RX4fKrctfZZWC8gM6C-oX1IQ/edit"
+                        target="_blank" class="btn btn-primary">
+                        📝 Открыть таблицу новостей
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Никольский музей. Форма для добавления новостей.</p>
+        </div>
+    </footer>
+
+    <script src="js/admin-news-handler.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Посетителям - Краеведческий музей Никольска</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <h1>🏛️ Краеведческий музей Никольска</h1>
+                    <p>Пензенская область</p>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О музее</a></li>
+                        <li><a href="exhibitions.html">Выставки</a></li>
+                        <li><a href="collections.html">Коллекции</a></li>
+                        <li><a href="visit.html" class="active">Посетителям</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Посетителям музея</h1>
+
+                <div class="visit-grid">
+                    <div class="visit-info-block">
+                        <h2>Режим работы</h2>
+                        <p><strong>Вторник - Воскресенье:</strong> 10:00 - 17:00</p>
+                        <p><strong>Понедельник:</strong> Выходной</p>
+                        <p><strong>Последняя пятница месяца:</strong> Санитарный день</p>
+
+                        <h2>Стоимость билетов</h2>
+                        <table class="ticket-table">
+                            <tr>
+                                <td>Взрослый билет</td>
+                                <td>200 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Студенты</td>
+                                <td>100 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Школьники (до 16 лет)</td>
+                                <td>Бесплатно</td>
+                            </tr>
+                            <tr>
+                                <td>Пенсионеры</td>
+                                <td>100 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Групповой (от 10 человек)</td>
+                                <td>150 ₽</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="visit-info-block">
+                        <h2>Как добраться</h2>
+                        <p><strong>Адрес:</strong> 442130, Пензенская обл., г. Никольск, ул. Ленина, 37</p>
+
+                        <h3>Общественный транспорт</h3>
+                        <p>Автобусы №2, 5, 7 - остановка "Центр"</p>
+
+                        <h3>На автомобиле</h3>
+                        <p>Парковка рядом с музеем (бесплатная)</p>
+
+                        <h3>Железнодорожный транспорт</h3>
+                        <p>Станция Никольск, далее автобусом до центра города</p>
+
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.458640244933!2d44.123456!3d53.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDcwJzIwLjQiTiA0NMKwMDcnMjQuNCJF!5e0!3m2!1sen!2sru!4v1234567890123"
+                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Экскурсии</h2>
+                <div class="excursion-options">
+                    <div class="excursion-option">
+                        <h3>Обзорная экскурсия</h3>
+                        <p class="excursion-price">400 ₽ / человек</p>
+                        <p>Полное знакомство с экспозицией музея, история Никольского района и Пензенской области</p>
+                        <p><strong>Продолжительность:</strong> 1,5 часа</p>
+                    </div>
+
+                    <div class="excursion-option">
+                        <h3>Тематические экскурсии</h3>
+                        <p class="excursion-price">500 ₽ / человек</p>
+                        <p>Экскурсии по отдельным темам: "Военные годы", "Традиции и ремесла", "Природа края"</p>
+                        <p><strong>Продолжительность:</strong> 1 час</p>
+                    </div>
+
+                    <div class="excursion-option">
+                        <h3>Для школьников</h3>
+                        <p class="excursion-price">Бесплатно</p>
+                        <p>Образовательные программы в соответствии с учебной программой</p>
+                        <p><strong>Продолжительность:</strong> 45 минут</p>
+                    </div>
+                </div>
+
+                <div class="booking-form">
+                    <h3>Забронировать экскурсию</h3>
+                    <form class="excursion-booking">
+                        <div class="form-row">
+                            <input type="text" placeholder="Ваше имя" required>
+                            <input type="email" placeholder="Email" required>
+                            <input type="tel" placeholder="Телефон" required>
+                        </div>
+                        <div class="form-row">
+                            <select required>
+                                <option value="">Выберите тип экскурсии</option>
+                                <option value="overview">Обзорная экскурсия</option>
+                                <option value="thematic">Тематическая экскурсия</option>
+                                <option value="school">Для школьников</option>
+                            </select>
+                            <input type="date" required>
+                            <input type="time" required>
+                        </div>
+                        <textarea placeholder="Комментарии и особые пожелания"></textarea>
+                        <button type="submit" class="btn btn-primary">Забронировать</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Правила посещения</h2>
+                <div class="rules-grid">
+                    <div class="rule-item">
+                        <div class="rule-icon">✅</div>
+                        <div class="rule-content">
+                            <h3>Разрешено</h3>
+                            <ul>
+                                <li>Фотографировать без вспышки</li>
+                                <li>Пользоваться аудиогидом</li>
+                                <li>Брать с собой детей</li>
+                                <li>Посещать с домашними животными (в наморднике)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="rule-item">
+                        <div class="rule-icon">❌</div>
+                        <div class="rule-content">
+                            <h3>Запрещено</h3>
+                            <ul>
+                                <li>Приносить еду и напитки</li>
+                                <li>Прикасаться к экспонатам</li>
+                                <li>Фотографировать с вспышкой</li>
+                                <li>Шуметь и мешать другим посетителям</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Услуги музея</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-icon">🔍</div>
+                        <h3>Поиск информации</h3>
+                        <p>Помощь в поиске информации о ваших предках, проживающих в Никольском районе</p>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">📚</div>
+                        <h3>Библиотека</h3>
+                        <p>Доступ к музейной библиотеке с книгами по истории и культуре региона</p>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">📸</div>
+                        <h3>Фотоуслуги</h3>
+                        <p>Фотографирование экспонатов для научных и учебных целей</p>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">🎓</div>
+                        <h3>Образовательные программы</h3>
+                        <p>Мастер-классы, лекции и выездные мероприятия для школ и организаций</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Доступность</h2>
+                <div class="accessibility-info">
+                    <div class="accessibility-item">
+                        <h3>Для людей с ограниченными возможностями</h3>
+                        <p>✓ Музей полностью доступен для колясочников</p>
+                        <p>✓ Имеется пандус и лифт</p>
+                        <p>✓ Специальные аудиогиды для слабовидящих</p>
+                        <p>✓ Тактильные модели экспонатов</p>
+                    </div>
+
+                    <div class="accessibility-item">
+                        <h3>Для детей</h3>
+                        <p>✓ Детские экскурсии и интерактивные программы</p>
+                        <p>✓ Удобные зоны для отдыха с детьми</p>
+                        <p>✓ Доступные туалеты</p>
+                        <p>✓ Возможность заказа детских аудиогидов</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>🏛️ Краеведческий музей Никольска</h3>
+                    <p>Сохраняем историю Пензенского края для будущих поколений</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <p>📞 +7 (84145) 2-12-34</p>
+                    <p>📧 info@museum-nikolsk.ru</p>
+                    <p>📍 ул. Ленина, 37, г. Никольск, Пензенская обл.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Соцсети</h4>
+                    <div class="social-links">
+                        <a href="#">VK</a>
+                        <a href="#">Telegram</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Краеведческий музей Никольска. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

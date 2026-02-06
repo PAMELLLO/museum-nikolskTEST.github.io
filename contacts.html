@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Краеведческий музей Никольска</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <h1>🏛️ Краеведческий музей Никольска</h1>
+                    <p>Пензенская область</p>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О музее</a></li>
+                        <li><a href="exhibitions.html">Выставки</a></li>
+                        <li><a href="collections.html">Коллекции</a></li>
+                        <li><a href="visit.html">Посетителям</a></li>
+                        <li><a href="contacts.html" class="active">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Контактная информация</h1>
+
+                <div class="contacts-grid">
+                    <div class="contact-info">
+                        <h2>Краеведческий музей Никольска</h2>
+                        <p><strong>Адрес:</strong> 442130, Пензенская обл., г. Никольск, ул. Ленина, 37</p>
+                        <p><strong>Телефон:</strong> +7 (84145) 2-12-34</p>
+                        <p><strong>Email:</strong> info@museum-nikolsk.ru</p>
+                        <p><strong>Режим работы:</strong> Вт-Вс: 10:00-17:00, Пн: выходной</p>
+                        <p><strong>Директор:</strong> Петрова Елена Владимировна</p>
+                        <p><strong>Зам. директора по научной части:</strong> Смирнов Александр Иванович</p>
+                    </div>
+
+                    <div class="contact-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.458640244933!2d44.123456!3d53.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDcwJzIwLjQiTiA0NMKwMDcnMjQuNCJF!5e0!3m2!1sen!2sru!4v1234567890123"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Обратная связь</h2>
+                <div class="feedback-form">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Ваше имя *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Тема сообщения *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Выберите тему</option>
+                                <option value="visit">Посещение музея</option>
+                                <option value="excursion">Заказ экскурсии</option>
+                                <option value="research">Научные запросы</option>
+                                <option value="donation">Передача экспонатов</option>
+                                <option value="general">Общий вопрос</option>
+                                <option value="complaint">Жалоба/предложение</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Сообщение *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="consent" required> Я даю согласие на обработку персональных
+                                данных
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Контакты сотрудников</h2>
+                <div class="staff-contacts">
+                    <div class="staff-contact">
+                        <h3>Петрова Елена Владимировна</h3>
+                        <p>Директор музея</p>
+                        <p>📧 director@museum-nikolsk.ru</p>
+                        <p>📞 +7 (84145) 2-12-35</p>
+                        <p>Рабочие часы: Пн-Пт, 9:00-16:00</p>
+                    </div>
+
+                    <div class="staff-contact">
+                        <h3>Смирнов Александр Иванович</h3>
+                        <p>Заведующий фондами, зам. директора по научной части</p>
+                        <p>📧 fond@museum-nikolsk.ru</p>
+                        <p>📞 +7 (84145) 2-12-36</p>
+                        <p>Рабочие часы: Пн-Пт, 9:00-16:00</p>
+                    </div>
+
+                    <div class="staff-contact">
+                        <h3>Волкова Мария Константиновна</h3>
+                        <p>Методист, ответственный за образовательные программы</p>
+                        <p>📧 method@museum-nikolsk.ru</p>
+                        <p>📞 +7 (84145) 2-12-37</p>
+                        <p>Рабочие часы: Пн-Пт, 10:00-17:00</p>
+                    </div>
+
+                    <div class="staff-contact">
+                        <h3>Иванова Наталья Петровна</h3>
+                        <p>Экскурсовод-проводник</p>
+                        <p>📧 excursions@museum-nikolsk.ru</p>
+                        <p>📞 +7 (84145) 2-12-38</p>
+                        <p>Рабочие часы: Вт-Вс, 10:00-17:00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Социальные сети и медиа</h2>
+                <div class="social-media">
+                    <div class="social-platform">
+                        <h3>VKontakte</h3>
+                        <p>Ежедневные новости и интересные факты из истории Никольского района</p>
+                        <a href="#" class="social-link">https://vk.com/museum_nikolsk</a>
+                    </div>
+
+                    <div class="social-platform">
+                        <h3>Telegram</h3>
+                        <p>Авторские экскурсии, анонсы событий и редкие архивные материалы</p>
+                        <a href="#" class="social-link">https://t.me/museum_nikolsk</a>
+                    </div>
+
+                    <div class="social-platform">
+                        <h3>Instagram</h3>
+                        <p>Фотографии экспонатов, выставок и мероприятий музея</p>
+                        <a href="#" class="social-link">@museum_nikolsk</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Почтовые реквизиты</h2>
+                <div class="requisites">
+                    <p><strong>Полное наименование:</strong> Муниципальное бюджетное учреждение культуры "Краеведческий
+                        музей Никольского района"</p>
+                    <p><strong>Сокращенное наименование:</strong> МБУК "Краеведческий музей Никольского района"</p>
+                    <p><strong>ИНН:</strong> 5815001234</p>
+                    <p><strong>КПП:</strong> 581501001</p>
+                    <p><strong>ОГРН:</strong> 1025801234567</p>
+                    <p><strong>Юридический адрес:</strong> 442130, Пензенская обл., г. Никольск, ул. Ленина, 37</p>
+                    <p><strong>Почтовый адрес:</strong> 442130, Пензенская обл., г. Никольск, ул. Ленина, 37</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>🏛️ Краеведческий музей Никольска</h3>
+                    <p>Сохраняем историю Пензенского края для будущих поколений</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <p>📞 +7 (84145) 2-12-34</p>
+                    <p>📧 info@museum-nikolsk.ru</p>
+                    <p>📍 ул. Ленина, 37, г. Никольск, Пензенская обл.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Соцсети</h4>
+                    <div class="social-links">
+                        <a href="#">VK</a>
+                        <a href="#">Telegram</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Краеведческий музей Никольска. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
